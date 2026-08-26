@@ -11,16 +11,6 @@ import 'task9_set.dart' show task9;
 import 'task10_library.dart' show task10;
 
 void main() {
-  task1();
-  task2();
-  task3();
-  task4();
-  task5();
-  task6();
-  task7();
-  task8();
-  task9();
-  task10();
   runApp(const MyApp());
 }
 
@@ -63,6 +53,48 @@ class _HomeScreenState extends State<HomeScreen> {
     {"name": "Rich Dad Poor Dad", "title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "extra": "EPUB"},
     {"name": "The Psychology of Money", "title": "The Psychology of Money", "author": "Morgan Housel", "extra": "PDF"},
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    runTask(1);
+  }
+
+  void runTask(int taskNum) {
+    print("================ Running Task $taskNum ================");
+    switch (taskNum) {
+      case 1:
+        task1();
+        break;
+      case 2:
+        task2();
+        break;
+      case 3:
+        task3();
+        break;
+      case 4:
+        task4();
+        break;
+      case 5:
+        task5();
+        break;
+      case 6:
+        task6();
+        break;
+      case 7:
+        task7();
+        break;
+      case 8:
+        task8();
+        break;
+      case 9:
+        task9();
+        break;
+      case 10:
+        task10();
+        break;
+    }
+  }
 
   String getTaskName(int index) {
     switch (index) {
@@ -143,6 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         setState(() {
                           selectedTask = taskNum;
                         });
+                        runTask(taskNum);
                       }
                     },
                   ),
