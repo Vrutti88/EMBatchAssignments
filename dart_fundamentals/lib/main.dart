@@ -12,7 +12,7 @@ import '08_advanced_functions.dart' as m08;
 import '09_advanced_null_safety.dart' as m09;
 
 void main() {
-  runApp(const DartAssignmentApp());
+  runApp(const MyApp());
 }
 
 class ModuleItem {
@@ -29,8 +29,8 @@ class ModuleItem {
   });
 }
 
-class DartAssignmentApp extends StatelessWidget {
-  const DartAssignmentApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
