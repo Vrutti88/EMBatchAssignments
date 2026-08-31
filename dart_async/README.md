@@ -1,8 +1,4 @@
-# Dart Asynchronous Programming, Null Safety & Mock API Application
-
-**Assignment Title:** Dart Asynchronous Programming & Null Safety with Mock API Integration  
-**Course/Batch:** Flutter Development – EMBatchAssignments  
-**Submission Date:** August 31, 2026  
+# Null-Safe Async Fetcher
 
 ---
 
@@ -27,20 +23,6 @@ dart_async/
 ├── pubspec.yaml           # Dependencies and project metadata
 ├── README.md              # Project overview & documentation
 └── ASSIGNMENT_REPORT.md   # Complete assignment evaluation report
-```
-
----
-
-## 🚀 How to Run the Project
-
-### Option 1: Run as a Flutter App (Device / Emulator / Chrome)
-```bash
-flutter run
-```
-
-### Option 2: Run directly in the Dart Console
-```bash
-dart run lib/async_dart.dart
 ```
 
 ---
