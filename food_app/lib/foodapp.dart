@@ -224,8 +224,6 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themePrimary = Theme.of(context).primaryColor;
-
     return Container(
       decoration: const BoxDecoration(
         color: Colors.white,
@@ -311,50 +309,6 @@ class SideMenu extends StatelessWidget {
                   MenuItem(icon: Icons.restaurant_rounded, title: 'Menu'),
                   MenuItem(icon: Icons.settings_rounded, title: 'Settings'),
                 ],
-              ),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: themePrimary.withValues(alpha: 0.06),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: const Color(0xFFEFE8E2)),
-                ),
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 18,
-                      backgroundColor: themePrimary.withValues(alpha: 0.15),
-                      child: Icon(Icons.person, color: themePrimary, size: 20),
-                    ),
-                    const SizedBox(width: 10),
-                    const Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Admin Chef',
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF2C1810),
-                            ),
-                          ),
-                          Text(
-                            'Gourmet Master',
-                            style: TextStyle(
-                              fontSize: 11,
-                              color: Color(0xFF786259),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ),
           ],
