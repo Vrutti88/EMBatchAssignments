@@ -11,22 +11,6 @@ This project demonstrates how to build a robust, production-ready Dart and Flutt
 
 ---
 
-## 📂 Project Architecture & Files
-
-```
-dart_async/
-├── lib/
-│   ├── async_dart.dart    # Mock API service, business logic & console test runner
-│   └── main.dart          # Flutter user interface & state management
-├── test/
-│   └── widget_test.dart   # Smoke tests for widget rendering
-├── pubspec.yaml           # Dependencies and project metadata
-├── README.md              # Project overview & documentation
-└── ASSIGNMENT_REPORT.md   # Complete assignment evaluation report
-```
-
----
-
 ## 🧪 Test Scenarios & Expected Outputs
 
 ### 1. Success Case (`hasError: false, isNull: false`)
