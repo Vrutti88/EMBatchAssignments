@@ -161,7 +161,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Icon(
-                      Icons.restaurant_menu_rounded,
+                      Icons.outdoor_grill_sharp,
                       color: Color(0xFF800020),
                       size: 22,
                     ),
@@ -261,7 +261,7 @@ class SideMenu extends StatelessWidget {
                     ),
 
                     child: const Icon(
-                      Icons.restaurant_menu_rounded,
+                      Icons.outdoor_grill_sharp,
                       size: 24,
                       color: Colors.white,
                     ),
@@ -308,7 +308,6 @@ class SideMenu extends StatelessWidget {
                     title: 'Offers',
                     badge: 'HOT',
                   ),
-                  MenuItem(icon: Icons.people_rounded, title: 'Customers'),
                   MenuItem(icon: Icons.restaurant_rounded, title: 'Menu'),
                   MenuItem(icon: Icons.settings_rounded, title: 'Settings'),
                 ],
@@ -2254,7 +2253,7 @@ class DetailScreen extends StatelessWidget {
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
-                  Icons.restaurant_rounded,
+                  Icons.outdoor_grill_sharp,
                   size: 60,
                   color: Color(0xFF800020),
                 ),
@@ -2267,12 +2266,6 @@ class DetailScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF2C1810),
                 ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                'This section is under live management.\nAll data is synchronized with FlavorCraft cloud.',
-                textAlign: TextAlign.center,
-                style: TextStyle(color: Color(0xFF786259), height: 1.4),
               ),
               const SizedBox(height: 28),
               ElevatedButton.icon(
