@@ -1,17 +1,101 @@
-# dart_async
+# Dart Asynchronous Programming, Null Safety & Mock API Application
 
-A new Flutter project.
+**Assignment Title:** Dart Asynchronous Programming & Null Safety with Mock API Integration  
+**Course/Batch:** Flutter Development – EMBatchAssignments  
+**Submission Date:** August 31, 2026  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Project Overview
+This project demonstrates how to build a robust, production-ready Dart and Flutter application utilizing:
+1. **Sound Null Safety**: Nullable types (`String?`), non-nullable assertions, and the null-coalescing operator (`??`).
+2. **Asynchronous Programming**: `Future`, `async`, `await`, `Future.delayed`, and operation timeouts (`.timeout()`).
+3. **Exception Handling**: Safe network simulation using `try`, `catch`, and `finally`.
+4. **Interactive Flutter UI**: A clean UI displaying Loading, Success, Null, and Error states.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 📂 Project Architecture & Files
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+dart_async/
+├── lib/
+│   ├── async_dart.dart    # Mock API service, business logic & console test runner
+│   └── main.dart          # Flutter user interface & state management
+├── test/
+│   └── widget_test.dart   # Smoke tests for widget rendering
+├── pubspec.yaml           # Dependencies and project metadata
+├── README.md              # Project overview & documentation
+└── ASSIGNMENT_REPORT.md   # Complete assignment evaluation report
+```
+
+---
+
+## 🚀 How to Run the Project
+
+### Option 1: Run as a Flutter App (Device / Emulator / Chrome)
+```bash
+flutter run
+```
+
+### Option 2: Run directly in the Dart Console
+```bash
+dart run lib/async_dart.dart
+```
+
+---
+
+## 🧪 Test Scenarios & Expected Outputs
+
+### 1. Success Case (`hasError: false, isNull: false`)
+- **Behavior**: Waits 2 seconds, returns valid mock user data.
+- **Output**:
+  ```text
+  Wait for 2 secs...
+  Success: User Data: Name = John Doe, Role = Developer
+  Finally block executed successfully
+  ```
+
+### 2. Null Response Case (`hasError: false, isNull: true`)
+- **Behavior**: Waits 2 seconds, returns `null`, safely handled by `??` operator.
+- **Output**:
+  ```text
+  Wait for 2 secs...
+  Success: Warning: No user data found (Null).
+  Finally block executed successfully
+  ```
+
+### 3. Error Case (`hasError: true, isNull: false`)
+- **Behavior**: Waits 2 seconds, throws a network `Exception`, caught in `catch` block.
+- **Output**:
+  ```text
+  Wait for 2 secs...
+  Future code cannot be executed: Exception: Network error: Unable to fetch data
+  Finally block executed successfully
+  ```
+
+---
+
+## 📖 Key Concepts Demonstrated
+
+- **Null Safety**:
+  ```dart
+  String? result = await fetchUserData(...);
+  String finalMessage = result ?? "Warning: No user data found (Null).";
+  ```
+- **Async / Await with Timeout**:
+  ```dart
+  String? result = await fetchUserData(...)
+      .timeout(const Duration(seconds: 5));
+  ```
+- **Try-Catch-Finally**:
+  ```dart
+  try {
+    // async work
+  } catch (e) {
+    // handle error
+  } finally {
+    // guaranteed cleanup
+  }
+  ```
+
