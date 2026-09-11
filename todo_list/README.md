@@ -237,8 +237,6 @@ This project fulfills all requirements for the **Flutter Development Todo List A
 ## 👨‍💻 Author & Credits
 
 * **Author:** Vrutti Patil
-* **GitHub:** [@Vrutti88](https://github.com/Vrutti88)
-* **Repository:** [EMBatchAssignments](https://github.com/Vrutti88/EMBatchAssignments)
 * **Technology:** Flutter & Dart
 * **Design Guidelines:** Material Design 3
 
