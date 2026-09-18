@@ -7,20 +7,7 @@
 
 ---
 
-## 📑 Assignment Evaluation Matrix (10 Marks)
-
-| Section | Criteria | Marks Allocated | Status |
-| :--- | :--- | :---: | :---: |
-| **1** | **Assignment Completion** (All tasks & instructions fulfilled) | **2 Marks** | ✅ Completed |
-| **2** | **Project & Work Quality** (Correct concepts, 0 lint/analysis errors) | **2 Marks** | ✅ Completed |
-| **3** | **GitHub Repository** (Code structure, git tracking, clean repo) | **2 Marks** | ✅ Completed |
-| **4** | **Report & Screenshots** (Visual documentation, step-by-step UI) | **2 Marks** | ✅ Completed |
-| **5** | **What You Learned** (In-depth 2+ page reflection & problem-solving log) | **2 Marks** | ✅ Completed |
-| **Total** | **Comprehensive Assignment Evaluation** | **10 Marks** | **10 / 10** |
-
----
-
-## 📌 1. Assignment Completion (2 Marks)
+## 📌 1. Assignment Completion
 
 All requirements and instructions specified for this assignment have been fully implemented:
 
@@ -41,7 +28,7 @@ All requirements and instructions specified for this assignment have been fully 
 
 ---
 
-## 🛠️ 2. Project & Work Quality (2 Marks)
+## 🛠️ 2. Project & Work Quality
 
 The project adheres strictly to Flutter best practices, clean architecture, and class concepts:
 
@@ -58,7 +45,7 @@ The project adheres strictly to Flutter best practices, clean architecture, and 
 
 ---
 
-## 🔗 3. GitHub Repository Details (2 Marks)
+## 🔗 3. GitHub Repository Details
 
 - **GitHub Repository Link**: [https://github.com/Vrutti88/EMBatchAssignments](https://github.com/Vrutti88/EMBatchAssignments)
 - **Project Folder**: `multi_screen`
@@ -108,7 +95,7 @@ flutter run
 
 ---
 
-## 📸 4. Report & Screenshots (2 Marks)
+## 📸 4. Report & Screenshots
 
 ### Step-by-Step UI Flow
 
@@ -126,7 +113,7 @@ flutter run
 
 ---
 
-## 📖 5. What You Learned (2 Marks — Comprehensive 2-Page Technical Reflection)
+## 📖 5. What I Learned
 
 ---
 
